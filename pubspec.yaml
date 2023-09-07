@@ -1,0 +1,77 @@
+name: fast_food
+description: A new Flutter project.
+
+publish_to: 'none' # Remove this line if you wish to publish to pub.dev
+
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.0.2 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+
+  cupertino_icons: ^1.0.2
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  flutter_lints: ^2.0.0
+
+flutter:
+
+  uses-material-design: true
+
+  # To add assets to your application, add an assets section, like this:
+
+  assets:
+     - assets/coca.JPG
+     - assets/coca_zero.JPG
+     - assets/double_hamburger.jpeg
+     - assets/double_hamburger_frite.jpg
+     - assets/eau.JPG
+     - assets/fanta.JPG
+     - assets/frite_chicken.JPG
+     - assets/frite_cuisse.jpeg
+     - assets/frite_viande.jpeg
+     - assets/frite_viande.JPG
+     - assets/frites.jpeg
+     - assets/Frites-maison.jpeg
+     - assets/hamburger.jpeg
+     - assets/hamburger_frite.JPG
+     - assets/pizza_coeur.jpeg
+     - assets/pizza_peperoni.JPG
+     - assets/pizza_poulet.jpeg
+     - assets/pizza_viande.jpeg
+     - assets/pizza_viande.JPG
+     - assets/plat_frite.JPG
+     - assets/plat_viande.jpg
+     - assets/poulet.jpg
+     - assets/poulet-3.png
+     - assets/poulet_frite.JPG
+     - assets/sauce-aux-trois-viandes.jpeg
+     - assets/soft_drunk.jpeg
+     - assets/spaghetti.jpeg
+     - assets/spaghetti_rio.jpeg
+     - assets/spaghetti_sauce.JPG
+     - assets/spaghetti_saucisse.JPG
+     - assets/viande.jpeg
+
+
+  fonts:
+   - family: Montserrat
+     fonts:
+        - asset: fonts/Montserrat-Medium.ttf
+  #       - asset: fonts/Schyler-Italic.ttf
+  #         style: italic
+  #   - family: Trajan Pro
+  #     fonts:
+  #       - asset: fonts/TrajanPro.ttf
+  #       - asset: fonts/TrajanPro_Bold.ttf
+  #         weight: 700
+  #
+  # For details regarding fonts from package dependencies,
+  # see https://flutter.dev/custom-fonts/#from-packages
