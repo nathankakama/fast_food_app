@@ -253,10 +253,18 @@ class _MyHomePageState extends State<MyHomePage> {
                     Container(
                       width: MediaQuery.of(context).size.width,
                       height: MediaQuery.of(context).size.height/4.5,
-                      padding: EdgeInsets.symmetric(vertical: 5.0, horizontal: 10.0),
-                      child: Image.asset(
-                        products[index].picture,
-                        fit: BoxFit.cover,
+                      padding: EdgeInsets.symmetric(
+                          vertical: 2.0, horizontal: 5.0
+                      ),
+                      decoration: BoxDecoration(
+                        borderRadius: BorderRadius.circular(5),
+                      ),
+                      child: ClipRRect(
+                        borderRadius: BorderRadius.circular(5),
+                        child: Image.asset(
+                          products[index].picture,
+                          fit: BoxFit.cover,
+                        ),
                       ),
                     ),
                     Text(

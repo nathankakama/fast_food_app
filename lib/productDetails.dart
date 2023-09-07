@@ -34,7 +34,13 @@ class DetailProduct extends StatelessWidget {
             // color: Colors.red,
             width: MediaQuery.of(context).size.width/1.3,
             height: MediaQuery.of(context).size.height/3,
-            child: Image.asset('assets/pizza_peperoni.JPG', fit: BoxFit.cover,),
+            decoration: BoxDecoration(
+              borderRadius: BorderRadius.circular(10),
+            ),
+            child: ClipRRect(
+              borderRadius: BorderRadius.circular(10),
+              child:  Image.asset('assets/pizza_peperoni.JPG', fit: BoxFit.cover,),
+            )
           ),
           PriceText('\$5.99'),
           SizedBox(height: 15.0,),
@@ -42,7 +48,7 @@ class DetailProduct extends StatelessWidget {
           DetailText("Description"),
           Container(
             width: MediaQuery.of(context).size.width/1.2,
-            height: 60.0,
+            height: 50.0,
             child: ElevatedButton(
               style: ButtonStyle(
                 backgroundColor: MaterialStateProperty.all<Color>(Colors.white),
@@ -64,7 +70,7 @@ class DetailProduct extends StatelessWidget {
           ),
           Container(
             width: MediaQuery.of(context).size.width/1.2,
-            height: 60.0,
+            height: 50.0,
             child: ElevatedButton(
               style: ButtonStyle(
                 backgroundColor: MaterialStateProperty.all<Color>(Color(0xFF378DFC)),

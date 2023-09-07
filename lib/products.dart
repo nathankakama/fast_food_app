@@ -69,11 +69,16 @@ class ProductPage extends StatelessWidget {
                       margin: EdgeInsets.symmetric(horizontal: 10.0),
                       width: MediaQuery.of(context).size.width/2.5,
                       height: MediaQuery.of(context).size.height/5,
-                      // borderRadius: BorderRadius.circular(10.0),
-                      child: Image.asset(
-                        firstLine.picture,
-                        fit: BoxFit.cover,
+                      decoration: BoxDecoration(
+                        borderRadius: BorderRadius.circular(5)
                       ),
+                     child: ClipRRect(
+                       borderRadius: BorderRadius.circular(5),
+                       child: Image.asset(
+                         firstLine.picture,
+                         fit: BoxFit.cover,
+                       ),
+                     ),
                     ),
                     Column(
                       mainAxisAlignment: MainAxisAlignment.start,
@@ -93,11 +98,16 @@ class ProductPage extends StatelessWidget {
                       margin: EdgeInsets.symmetric(horizontal: 10.0),
                       width: MediaQuery.of(context).size.width/2.5,
                       height: MediaQuery.of(context).size.height/5,
-                      // borderRadius: BorderRadius.circular(10.0),
-                      child: Image.asset(
-                        secondLine.picture,
-                        fit: BoxFit.cover,
+                      decoration: BoxDecoration(
+                        borderRadius: BorderRadius.circular(5.0),
                       ),
+                      child: ClipRRect(
+                        borderRadius: BorderRadius.circular(5.0),
+                        child: Image.asset(
+                          secondLine.picture,
+                          fit: BoxFit.cover,
+                        ),
+                      )
                     ),
                     Column(
                       mainAxisAlignment: MainAxisAlignment.start,
@@ -116,11 +126,16 @@ class ProductPage extends StatelessWidget {
                       margin: EdgeInsets.symmetric(horizontal: 10.0),
                       width: MediaQuery.of(context).size.width/2.5,
                       height: MediaQuery.of(context).size.height/5,
-                      // borderRadius: BorderRadius.circular(10.0),
-                      child: Image.asset(
-                        thirdLine.picture,
-                        fit: BoxFit.cover,
+                      decoration: BoxDecoration(
+                        borderRadius: BorderRadius.circular(5.0),
                       ),
+                      child:ClipRRect(
+                        borderRadius: BorderRadius.circular(5.0),
+                        child: Image.asset(
+                          thirdLine.picture,
+                          fit: BoxFit.cover,
+                        ),
+                      )
                     ),
                     Column(
                       mainAxisAlignment: MainAxisAlignment.start,
@@ -139,10 +154,15 @@ class ProductPage extends StatelessWidget {
                       margin: EdgeInsets.symmetric(horizontal: 10.0),
                       width: MediaQuery.of(context).size.width/2.5,
                       height: MediaQuery.of(context).size.height/5,
-                      // borderRadius: BorderRadius.circular(10.0),
-                      child: Image.asset(
-                        touthLine.picture,
-                        fit: BoxFit.cover,
+                      decoration: BoxDecoration(
+                        borderRadius: BorderRadius.circular(5.0),
+                      ),
+                      child: ClipRRect(
+                        borderRadius: BorderRadius.circular(5.0),
+                        child: Image.asset(
+                          touthLine.picture,
+                          fit: BoxFit.cover,
+                        ),
                       ),
                     ),
                     Column(
